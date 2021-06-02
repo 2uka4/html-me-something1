@@ -1,0 +1,215 @@
+/* Elements */
+body{
+    background: linear-gradient(to left, #45886c,#6fa2f0);
+    font-family:'Baloo Da 2', cursive;
+    font-size:12pt;
+    font-weight:400;
+    color:#fff;
+    width:100vw;
+    height:100vw;
+    margin:0px;
+    padding:0px;
+    overflow-x:hidden;
+    position: relative;
+    padding-bottom: 78px;
+    min-height: 100vh;
+}
+
+header{
+    background-image:url("/Users/ilchorgil/html-me-something/html-me-something/images/Terelj_national_park_mongolia.jpg");
+    height:auto;
+    padding:30px;
+    margin:0px;
+}
+ main{
+     width:100%;
+     padding:30px 50px;
+     text-align: justify;
+     box-sizing:border-box;
+     min-height: calc(100vh - 305vh - 78vh);
+
+ }
+ footer{
+     color: white;
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     background-color: rgb(192, 156, 187);
+     text-align:right;
+     height:auto;
+     padding:20px;
+     margin:0px;
+
+ }
+ h1{
+    font-size:3.5rem;
+    font-family:'Baloo Da 2', cursive;
+    /* font-weight:700; */
+    margin: 0px 0px 10px;
+    padding: 10px;
+ }
+ h2{
+    /* display: inline; */
+    font-size:1.5rem;
+    font-weight:700;
+    text-transform:uppercase;
+    margin: 0px 0px 10px;
+    padding: 10px;
+    
+ }
+ h3{
+    font-family:'Baloo Da 2', cursive;
+    font-size:2rem;
+    font-weight:700;
+    color: rgb(217, 247, 162);
+    margin:5px;
+ }
+ h4{
+    font-weight:900;
+    font-style:italic;
+    margin:10px 0px 0px;
+    font-family:'Baloo Da 2', cursive;
+    color: rgb(217, 247, 162);
+ }
+ p{
+     text-align:justify;
+     margin:.5rem 0px;
+ }
+ img{
+     width:250px;
+     margin:10px 0px;
+     cursor: pointer;
+ }
+ hr{
+     height:.4rem;
+     background-color:rgb(217, 247, 162);
+     border:none;
+     margin:20px 0px 0px;
+ }
+a{
+    color:pink;
+    font-weight:600;
+    text-decoration:none;
+}
+a:hover{
+    color: rgb(148, 230, 179) !important;
+}
+a:visited{
+    color: rgb(189, 103, 223)
+}
+.animation-area {
+    /* background: linear-gradient(to left, #45886c,#0967f3); */
+    width: 100%;
+    height: 100vh;
+}
+.box-area{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.box-area li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background:linear-gradient(to left, #feffad,#41a9c4);;
+    animation: animate 15s linear infinite;
+    bottom: -150px;
+}
+.box-area li:nth-child(1){
+    left: 86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;   
+}
+.box-area li:nth-child(2){
+    left: 12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+}
+.box-area li:nth-child(3){
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
+}
+.box-area li:nth-child(4){
+    left: 42%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+.box-area li:nth-child(5){
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+}
+.box-area li:nth-child(6){
+    left: 15%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3.5s;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-800px)rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* ID's*/
+
+#page-title{
+    color: rgb(207, 255, 192);
+    text-align:center;
+}
+#tagline{
+    font-family:'Baloo Da 2', cursive;
+    color:#fff;
+    text-align:center;
+    margin-right:0px;
+}
+#intro{
+    /* display: inline; */
+    font-style:italic;
+    margin-bottom:0px;
+}
+
+/* Classes*/
+.right{
+    float:right;
+    margin-left:20px;
+}
+.bordered{
+    border:4px white;
+    padding:10px;
+}
+/* .banner-text{
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to left, #45886c,#6fa2f0);
+}
+.banner-text ul{
+    height: 20px;
+    float: right;  
+    margin-right: 10px;
+}
+.banner-text ul li {
+    display: inline-block;
+    padding: 15px 15px;
+    text-transform: uppercase;
+    color: rgb(217, 247, 162);
+    font-size: 12px;
+} */
